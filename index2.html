@@ -5,72 +5,76 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="style2.css" />
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="style3.css" />
 	</head>
 	<body>
-		<div class="container">
-			<div id="app-cover">
-				<div class="square">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<div id="ghost">
-					<div id="eyes">
-						<div class="eye"></div>
-						<div class="eye"></div>
+		<div class="wrapper">
+			<div class="wrapper-content">
+				<div class="shadow"></div>
+				<div class="bread bread--heart">
+					<div class="bread-upper"></div>
+					<div class="bread-bubbles bread-bubbles--1"></div>
+					<div class="bread-bubbles bread-bubbles--2"></div>
+					<div class="bread-bubbles bread-bubbles--3"></div>
+					<div class="bread-pic bread-pic--left">
+						<div class="bread-pic-heart"></div>
 					</div>
-					<div id="mouth"></div>
-					<div id="legs"></div>
+					<div class="bread-pic bread-pic--right">
+						<div class="bread-pic-heart"></div>
+					</div>
+				</div>
+				<div class="bread bread--ball">
+					<div class="bread-upper"></div>
+					<div class="bread-pic-ball">
+						<div class="bread-pic-ball-inner"></div>
+					</div>
+					<div class="bread-bubbles"></div>
+				</div>
+				<div class="toaster">
+					<div class="toaster-body">
+						<div class="toaster-body-main"></div>
+						<div class="toaster-switch">
+							<div class="toaster-switch-hole"></div>
+							<div class="toaster-switch-handler"></div>
+						</div>
+						<div class="toaster-face">
+							<div class="toaster-face-happy">
+								<div class="toaster-eyes-happy toaster-eyes-happy--right"></div>
+								<div class="toaster-eyes-happy toaster-eyes-happy--left"></div>
+								<div class="toaster-mouth-happy">
+									<div class="toaster-mouth-happy-main">
+										<div class="toaster-mouth-happy-teeth"></div>
+									</div>
+								</div>
+							</div>
+							<div class="toaster-face-tense">
+								<div class="toaster-eyes-tense-wr">
+									<div
+										class="toaster-eyes-tense toaster-eyes-tense--right"
+									></div>
+									<div
+										class="toaster-eyes-tense toaster-eyes-tense--left"
+									></div>
+								</div>
+								<div class="toaster-mouth-tense"></div>
+							</div>
+							<div class="toaster-face-blush"></div>
+						</div>
+					</div>
+					<div class="toaster-bottom">
+						<div class="toaster-line"></div>
+						<div class="toaster-legs"></div>
+					</div>
 				</div>
 			</div>
-			<div class="centered">
-				<h4>Will you be My Valentine?</h4>
-			</div>
 		</div>
-		<!-- <button class="yes" id="Yes">YES</button> -->
-		<button class="no btn" id="No">NO</button>
-		<div class="hero-btn">
-			<button class="btn">Yes</button>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-			<span class="particles-circle"></span>
-		</div>
-		<div id="answer--no"></div>
-		<script src="./script.js"></script>
 	</body>
+	<script>
+		const Btn = document.querySelectorAll(".toaster");
+		Btn.forEach((btn) => {
+			btn.addEventListener("click", function () {
+				window.location.href = "index3.html";
+			});
+		});
+	</script>
 </html>

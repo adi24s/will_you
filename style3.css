@@ -31,6 +31,9 @@ body {
 	-webkit-animation: shaking 8s infinite;
 	animation: shaking 8s infinite;
 }
+.toaster:hover {
+	cursor: pointer;
+}
 .toaster-body {
 	width: 344px;
 	height: 175px;

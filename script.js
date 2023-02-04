@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 parent.classList.add('active');
                 setTimeout(function () {
                     parent.classList.remove('active');
-                    window.location.href = "index3.html";
+                    window.location.href = "index2.html";
                 }, 2000);
             }
         });
