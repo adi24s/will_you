@@ -1,15 +1,82 @@
 body {
 	margin: 0;
 	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	height: 100vh;
 	background-color: #32333b;
 }
+
+.container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 100vh;
+}
+.container h4 {
+	color: #ffffff;
+	font-size: 3em;
+	font-weight: bold;
+}
+/*
+Valentine's Pen
+---- */
+
+.centered {
+	position: relative;
+	text-align: center;
+	top: -15%;
+}
+
+button {
+	width: 150px;
+	padding: 10px 40px;
+	margin: 0 20px;
+	border: 2px solid white;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 1.5em;
+	transition: all 0.25s ease-in-out;
+}
+
+button:hover {
+	transform: scale(1.1, 1.1);
+	cursor: pointer;
+}
+
+.no {
+	background-color: #d8124b;
+	position: absolute;
+	top: 50%;
+	right: 30%;
+}
+
+.yes {
+	position: absolute;
+	background-color: #12d890;
+	top: 50%;
+	right: 15%;
+}
+
+#answer--no {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+#answer--no {
+	background-image: url("https://media.giphy.com/media/QBEhpJHrv7poQ/giphy.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 #app-cover {
 	position: relative;
 	transform: scale(2);
+	margin: 0 10%;
 }
 .square {
 	position: relative;
