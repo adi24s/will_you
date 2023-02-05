@@ -1,6 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap");
+
 body {
 	margin: 0;
 	/* padding: 0; */
+}
+.btn-txt {
+	/* border: 2px solid red; */
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	translate: -50%;
+	top: 80%;
+	font-size: 3rem;
+	font-family: "Karla", sans-serif;
+	opacity: 0;
+	cursor: pointer;
+	background-color: transparent;
+	border: 0;
+}
+.animatedText {
+	animation: fadeAndScale 2s ease-in 1;
+	transform-origin: center bottom;
+	-webkit-animation-delay: 4s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeAndScale {
+	from {
+		opacity: 0;
+		transform: scale3d(0.75, 0.75, 1);
+		color: #fd5274;
+	}
+
+	to {
+		opacity: 1;
+		transform: scale3d(1, 1, 1);
+		color: #fff;
+	}
 }
 .wrapper {
 	width: 100vw;

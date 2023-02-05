@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>I Love You</title>
 		<link rel="stylesheet" href="style3.css" />
 	</head>
 	<body>
@@ -30,7 +30,7 @@
 					</div>
 					<div class="bread-bubbles"></div>
 				</div>
-				<div class="toaster">
+				<div class="toaster" id="Toaster">
 					<div class="toaster-body">
 						<div class="toaster-body-main"></div>
 						<div class="toaster-switch">
@@ -68,13 +68,17 @@
 				</div>
 			</div>
 		</div>
+		<button class="btn-txt animatedText" id="Btn-txt">Click Me !!!</button>
 	</body>
 	<script>
-		const Btn = document.querySelectorAll(".toaster");
-		Btn.forEach((btn) => {
-			btn.addEventListener("click", function () {
-				window.location.href = "index3.html";
-			});
+		const Btn = document.getElementById("Btn-txt");
+		const Toaster = document.getElementById("Toaster");
+
+		Btn.addEventListener("click", function () {
+			window.location.href = "index3.html";
+		});
+		Toaster.addEventListener("click", function () {
+			window.location.href = "index3.html";
 		});
 	</script>
 </html>
