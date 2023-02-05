@@ -62,7 +62,7 @@ Valentine's Pen
 	width: 100%;
 	top: 0;
 	left: 0;
-	z-index: 9;
+	z-index: 10;
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
@@ -269,4 +269,24 @@ Valentine's Pen
 #legs:after {
 	left: 22px;
 	box-shadow: inset -3px 0 0 0px #e4e4e4;
+}
+
+.made-with-love {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	bottom: 10px;
+	text-align: center;
+	font-size: 10px;
+	z-index: 9;
+	font-family: arial;
+	color: #ff0083;
+	font-weight: 600;
+}
+.made-with-love a {
+	color: #ff0083;
+	text-decoration: none;
+}
+.made-with-love a:hover {
+	text-decoration: underline;
 }
